@@ -13,16 +13,16 @@ class IcecreamTests: XCTestCase {
     
     let testIcecream = Icecream()
     
-    let namesAndFlavors = [
+    let namesAndFlavors =  [
         "Joe" : "Peanut Butter and Chocolate",
         "Tim" : "Natural Vanilla",
         "Sophie" : "Mexican Chocolate",
         "Deniz" : "Natural Vanilla",
         "Tom" : "Mexican Chocolate",
         "Jim" : "Natural Vanilla",
-        "Susan" : "Cookies 'N' Cream"
-    ]
-    
+        "Susan" : "Cookies 'N' Cream"]
+        
+        
     override func setUp() {
         super.setUp()
     }
@@ -36,7 +36,7 @@ class IcecreamTests: XCTestCase {
     func testStoredProperty() {
         XCTAssertEqual(testIcecream.favoriteFlavorsOfIceCream, namesAndFlavors, "Ice-cream dictionary is not created with the right key-value pairs.")
     }
-    
+        
     
     // 2.
     func testNamesForFlavorNaturalVanilla() {
